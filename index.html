@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="box">
+        <div class="calbox">Calculator</div>
+        <div class="result">
+          
+        </div>
+        <div class="typebox">
+            <div class="crossbox">
+                <button class="nobox" onclick="divFn()">%</button>
+                <button class="nobox">CE</button>
+                <button class="nobox" onclick="clearFn()">C</button>
+                <button class="nobox"  onclick="backFn()">
+                    <i class="fa-solid fa-delete-left" style="color: #121212;"></i>
+                </button>
+            </div>
+
+            
+
+            <div class="crossbox">
+                <button class="nobox" onclick="myFn(7)">7</button>
+                <button class="nobox" onclick="myFn(8)">8</button>
+                <button class="nobox" onclick="myFn(9)">9</button>
+                <button class="nobox" onclick="myFn('*')">x</button>
+            </div>
+            <div class="crossbox">
+                <button class="nobox" onclick="myFn(4)">4</button>
+                <button class="nobox" onclick="myFn(5)">5</button>
+                <button class="nobox" onclick="myFn(6)">6</button>
+                <button class="nobox" onclick="myFn('-')"><h1>-</h1></button>
+            </div>
+
+            <div class="crossbox">
+                <button class="nobox" onclick="myFn(1)">1</button>
+                <button class="nobox" onclick="myFn(2)">2</button>
+                <button class="nobox" onclick="myFn(3)">3</button>
+                <button class="nobox" onclick="myFn('+')">+</button>
+            </div>
+
+            <div class="crossbox">
+                <button class="nobox" onclick="myFn('/')">÷</button>
+                <button class="nobox" onclick="myFn('0')">0</button>
+                <button class="nobox"onclick="myFn('.')">.</button>
+                <button class="nobox1" onclick="evalFn()"> = </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFn(val){
+
+            document.querySelector(".result").innerHTML+=val
+
+        }
+        function evalFn(){
+
+        document.querySelector(".result").innerHTML=eval( document.querySelector(".result").innerHTML);
+        
+        }
+        function clearFn(){
+
+            document.querySelector(".result").innerHTML=""
+        }
+        function backFn(){
+
+        document.querySelector(".result").innerHTML=document.querySelector(".result").innerHTML.slice(0,-1)
+        }
+        function divFn(){
+            document.querySelector(".result").innerHTML=eval( document.querySelector(".result").innerHTML)*100
+        }
+
+
+    </script>
+
+<script src="https://kit.fontawesome.com/64fc7c3650.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    height: auto;
+    width: 30%;
+    background-color: #2f4a56;
+    border-radius: 8px;
+    border: 1px solid #9f9f9f;
+
+}
+.calbox{
+    margin: 10px;
+    color: #ffffff;
+}
+.result{
+    background-color: white;
+    height: 97px;
+    padding: 11px;
+    box-sizing: border-box;
+    
+    
+}
+.crossbox{
+    height: 70px;
+    /* background-color: azure; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nobox{
+    height: 52px;
+    width: 21%;
+    border: 1px solid #575757;
+    border-radius: 6px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgic{
+    width: 18%;
+}
+.nobox1{
+    height: 52px;
+    width: 21%;
+    border: 1px solid #575757;
+    border-radius: 6px;
+    background-color: #0075a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+    ;
+}
